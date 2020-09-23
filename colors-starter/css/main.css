@@ -78,6 +78,12 @@ footer {
   footer {
     background-color: lightgreen;
   }
+
+  .col-3 {
+  width: 50%;
+  height: 320px;
+  float: left;
+}
   
 }
 
@@ -103,5 +109,11 @@ footer {
   footer {
     background-color: maroon;
   }
+
+  .col-3 {
+  width: 33.33%;
+  height: 320px;
+  float: left;
+}
    
 }
