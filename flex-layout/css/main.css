@@ -11,7 +11,7 @@
    ========================================================================== */
 
 html {
-    color: #222;
+    color: #e6d7d5;
     font-size: 1em;
     line-height: 1.4;
 }
@@ -96,28 +96,26 @@ textarea {
    ========================================================================== */
 
 html {
-  background-color: #fff;
+  background-color: #173424;
   height: 100%;
   width: 100%;
 }
 
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Montserrat Alternates', sans-serif;
   padding: 0 2em;
   font-size: 1.25em;
   height: 100%;
-  color: #fff;
+  color: #e6d7d5;
 }
 
 header,
 footer {
-  background-color: #222;
-  height: 80px;
+  height: 120px;
   width: 100%;
 }
 
 main {
-  background-color: #ccc;
   height: 250px;
   width: 100%;
 }
@@ -138,15 +136,25 @@ main {
 }
 
 .flex-items {
-  color: #fff;
+  color: #e6d7d5;
   line-height: 1.5em;
-  font-size: 1.6em;
-  background-color: #f16059;
+  font-size: 1em;
   width: 30%;
   height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-left: 1px dotted #e7d7d5;
+  padding-left: 1em;
+}
+
+h1{
+  font-size: 2.5em;
+}
+
+footer{
+  justify-content: flex-start;
+  font-size: 0.7em;
 }
 
 /* ==========================================================================
