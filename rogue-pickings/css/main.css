@@ -8,14 +8,10 @@ body {
 	justify-content: center;
 	align-items: center;
 	font-size: 1em;
-	flex: row wrap;
-	width: 100%;
-}
 
 .container{
 	max-width: 1200px;
 	width: 90%;
-	margin: 0 auto;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -45,13 +41,14 @@ h4 {
 
 p {
 	font-size: 0.875em;
-	line-height: 1.3125em;
+	line-height: 21px;
     padding: 0 30px;
 }
 
 /*The widths are in a percentage!*/
 header {
 	border-bottom: 3px solid #77a466;
+	text-align: center;
 	margin: 0 auto;
 	display: flex;
 	justify-content: center;
@@ -62,16 +59,20 @@ header {
 
 header h1 {
 	margin: 0;
-	padding: 38px 0;
+	padding: 38px 20px 20px 20px;
 	text-align: center;
+	border-bottom: 3px solid #77a466; 
+	width: 100%;
 }
+
 header h1 span {
 	color: #77a466;
 }
 
 header nav {
-	padding: 46px 0;
+	padding: 20px 0;
 	text-align: center;
+	width: 100%;
 }
 header nav ul {
 	margin: 0;
@@ -92,8 +93,6 @@ header nav ul li a{
 /*The widths are in a percentage!*/
 .top-section,
 .bottom-section {
-	margin: 0 auto;
-	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -103,6 +102,7 @@ header nav ul li a{
 .main-image {
 	height: auto;
 }
+
 .main-image img {
 	width: 100%;
 	border-bottom: 3px solid #77a466;
@@ -126,24 +126,11 @@ header nav ul li a{
 .section-one,
 .section-two,
 .section-three {
-	width: 33%;
+	width: 100%;
 	height: auto;
 	border-top: 1px solid #eee;
 }
 
-.section-one h4 {
-	padding: 10px 0;
-}
-
-.section-two {
-	border-left: 1px solid #eee;
-	border-right: 1px solid #eee;
-}
-
-.section-two h4,
-.section-three h4 {
-	padding: 10px 30px;
-}
 
 .menu {
 	list-style: none;
@@ -168,7 +155,6 @@ header nav ul li a{
 /*The widths are in a percentage!*/
 footer {
 	border-top: 3px solid #eee;
-	margin: 0 auto;
 	text-align: center;
 	display: flex;
 	justify-content: center;
@@ -181,4 +167,47 @@ footer span {
 	text-transform: lowercase;
 	color: #77a466;
 	font-size: 0.875em;
+}
+
+@media only screen and (min-width: 768px){
+	/*tablet styles here*/
+	.bottom-section{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	border-top: 1px solid #eee;
+	}
+
+	.section-one,
+	.section-two,
+	.section-three{
+	border-top: none;
+	flex-basis: 30%;
+	}
+
+
+
+
+}
+
+@media only screen and (min-width: 1200px){
+	/*desktop styles here*/
+
+	header{
+		justify-content: space-between;
+	}
+
+	header h1{
+		width: 30%
+		padding: 0;
+		border-bottom: none;
+		text-align: left;
+	}
+
+
+	header nav ul{
+		display: flex;
+		justify-content: space-between;
+	}
 }
